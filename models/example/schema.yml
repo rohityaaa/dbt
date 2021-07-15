@@ -20,11 +20,7 @@ models:
                 - unique
                 - not_null
     - name: snowflake_customer_purchases
-      description: "total purchase for each customer"
-      columns:
-          - name: c_custkey
-            tests:
-                - unique
-                - not null 
     - name: customers01
+    - name: stg_customers
+    - name: stg_orders
 
