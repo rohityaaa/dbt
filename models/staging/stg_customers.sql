@@ -5,7 +5,7 @@ with customers as (
         first_name,
         last_name
 
-    from dbt_db.dbt.customers
+    from {{ source('dbt', 'customers') }}
 
 )
 

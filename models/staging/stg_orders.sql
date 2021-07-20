@@ -6,6 +6,6 @@ with orders as (
         order_date,
         status
 
-    from dbt_db.dbt.orders
+  from {{ source('dbt', 'orders') }}
 )
     select * from orders
